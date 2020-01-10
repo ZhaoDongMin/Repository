@@ -1,0 +1,20 @@
+    private void button4_Click(object sender, EventArgs e)       
+   {           
+ 	int gj = 0;  
+                int mj = 0;            
+                int xj = 0;           
+ 	for (gj = 0; gj <= 20; gj++)//公鸡的钱数就是他的判断条件  最多十九只公鸡    
+        	{           
+     	         for (mj = 0; mj <= 33; mj++)//一只母鸡3元  最多33只       
+                        {          
+         		 xj = 100 - gj - mj;//获取百中除了公鸡和母鸡后 小鸡的总钱数                  
+                   	if (5 * gj + 3 * mj + xj / 3 == 100)//如果公鸡 母鸡 小鸡的总钱数加起来为100           
+        		 {    
+                    	       Console.WriteLine("公鸡的个数" + gj);                 
+       		       Console.WriteLine("母鸡的个数" + mj);                  
+     		       Console.WriteLine("小鸡的个数" + xj);                       
+  		       Console.WriteLine("\n");                 
+                                   }     
+                        }
+	}
+}
